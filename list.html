@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Healthy Fruits & Vegetables</title>
+
+    <style>
+        body{
+            margin:0;
+            font-family:Arial, Helvetica, sans-serif;
+            background:linear-gradient(to right,#d4fc79,#96e6a1);
+        }
+
+        h1{
+            text-align:center;
+            color:white;
+            background:#2e8b57;
+            padding:20px;
+            margin:0;
+            letter-spacing:2px;
+        }
+
+        .container{
+            display:flex;
+            margin:20px;
+        }
+
+        .menu{
+            width:30%;
+            background:white;
+            border-radius:15px;
+            padding:20px;
+            box-shadow:0px 0px 10px gray;
+        }
+
+        .menu h2{
+            color:#2e8b57;
+            text-align:center;
+        }
+
+        ul{
+            list-style:none;
+            padding:0;
+        }
+
+        li{
+            background:#90ee90;
+            margin:10px 0;
+            padding:12px;
+            border-radius:10px;
+            cursor:pointer;
+            font-size:18px;
+            font-weight:bold;
+            transition:0.3s;
+        }
+
+        li:hover{
+            background:#2e8b57;
+            color:white;
+            transform:scale(1.05);
+        }
+
+        .details{
+            width:70%;
+            margin-left:20px;
+            background:white;
+            border-radius:15px;
+            padding:20px;
+            box-shadow:0px 0px 10px gray;
+        }
+
+        .item{
+            display:none;
+            text-align:center;
+        }
+
+        .item img{
+            width:250px;
+            height:200px;
+            border-radius:15px;
+            border:4px solid green;
+        }
+
+        .item h2{
+            color:darkgreen;
+        }
+
+        .item p{
+            font-size:18px;
+            text-align:justify;
+            padding:10px;
+        }
+
+        .item ul{
+            text-align:left;
+            display:inline-block;
+        }
+
+        .welcome{
+            text-align:center;
+            color:gray;
+            margin-top:120px;
+            font-size:25px;
+        }
+    </style>
+
+    <script>
+
+        function showItem(id){
+
+            var items=document.getElementsByClassName("item");
+
+            for(var i=0;i<items.length;i++)
+            {
+                items[i].style.display="none";
+            }
+
+            document.getElementById(id).style.display="block";
+
+        }
+
+    </script>
+
+</head>
+
+<body>
+
+<h1>Healthy Fruits & Vegetables Information</h1>
+      <p> Name:A.Bhavitha</p>
+      <p> Reg no:24K61A1203</p>
+
+<div class="container">
+
+<div class="menu">
+
+<h2>Fruits</h2>
+
+<ul>
+
+<li onclick="showItem('apple')"> Apple</li>
+<li onclick="showItem('banana')">Banana</li>
+<li onclick="showItem('mango')"> Mango</li>
+<li onclick="showItem('orange')"> Orange</li>
+<li onclick="showItem('grapes')"> Grapes</li>
+
+</ul>
+
+<h2>Vegetables</h2>
+
+<ul>
+
+<li onclick="showItem('carrot')">Carrot</li>
+<li onclick="showItem('potato')"> Potato</li>
+<li onclick="showItem('tomato')"> Tomato</li>
+<li onclick="showItem('spinach')"> Spinach</li>
+<li onclick="showItem('broccoli')"> Broccoli</li>
+
+</ul>
+
+</div>
+
+<div class="details">
+
+<div class="welcome">
+<h2>Select any Fruit or Vegetable from the list.</h2>
+</div>
+
+<div id="apple" class="item">
+<h2>Apple</h2>
+<img src="apple.jpg">
+<p><b>Description:</b> Apple is a sweet fruit rich in fiber and Vitamin C.</p>
+<h3>Benefits</h3>
+<ul>
+<li>Good for Heart</li>
+<li> Boosts Immunity</li>
+<li> Improves Digestion</li>
+</ul>
+</div>
+
+<div id="banana" class="item">
+<h2>Banana</h2>
+<img src="banana.jpg">
+<p><b>Description:</b> Banana is rich in potassium and gives instant energy.</p>
+<h3>Benefits</h3>
+<ul>
+<li>Provides Energy</li>
+<li> Strengthens Muscles</li>
+<li> Improves Digestion</li>
+</ul>
+</div>
+
+<div id="mango" class="item">
+<h2>Mango</h2>
+<img src="mango.jpg">
+<p><b>Description:</b> Mango is called the King of Fruits.</p>
+<h3>Benefits</h3>
+<ul>
+<li>Good for Eyes</li>
+<li> Boosts Immunity</li>
+<li> Healthy Skin</li>
+</ul>
+</div>
+
+<div id="orange" class="item">
+<h2>Orange</h2>
+<img src="orange.jpg">
+<p><b>Description:</b> Orange is rich in Vitamin C.</p>
+<h3>Benefits</h3>
+<ul>
+<li>Boosts Immunity</li>
+<li> Heart Healthy</li>
+<li> Healthy Skin</li>
+</ul>
+</div>
+
+<div id="grapes" class="item">
+<h2>Grapes</h2>
+<img src="grapes.jpg">
+<p><b>Description:</b> Grapes are rich in antioxidants.</p>
+<h3>Benefits</h3>
+<ul>
+<li>Good for Heart</li>
+<li>Improves Brain Health</li>
+<li>Rich in Vitamins</li>
+</ul>
+</div>
+
+<div id="carrot" class="item">
+<h2>Carrot</h2>
+<img src="carrot.jpg">
+<p><b>Description:</b> Carrot is rich in Vitamin A.</p>
+<h3>Benefits</h3>
+<ul>
+<li>Improves Eyesight</li>
+<li>Healthy Skin</li>
+<li>Boosts Immunity</li>
+</ul>
+</div>
+
+<div id="potato" class="item">
+<h2>Potato</h2>
+<img src="potato.jpg">
+<p><b>Description:</b> Potato is rich in carbohydrates.</p>
+<h3>Benefits</h3>
+<ul>
+<li>Gives Energy</li>
+<li>Rich in Potassium</li>
+<li>Easy to Digest</li>
+</ul>
+</div>
+
+<div id="tomato" class="item">
+<h2>Tomato</h2>
+<img src="tomato.jpg">
+<p><b>Description:</b> Tomato is rich in antioxidants.</p>
+<h3>Benefits</h3>
+<ul>
+<li>Good for Heart</li>
+<li>Healthy Skin</li>
+<li>Rich in Vitamin C</li>
+</ul>
+</div>
+
+<div id="spinach" class="item">
+<h2>Spinach</h2>
+<img src="spinach.jpg">
+<p><b>Description:</b> Spinach is rich in iron and calcium.</p>
+<h3>Benefits</h3>
+<ul>
+<li>Increases Hemoglobin</li>
+<li>Strong Bones</li>
+<li>Improves Immunity</li>
+</ul>
+</div>
+
+<div id="broccoli" class="item">
+<h2>Broccoli</h2>
+<img src="broccoli.jpg">
+<p><b>Description:</b> Broccoli is rich in fiber and vitamins.</p>
+<h3>Benefits</h3>
+<ul>
+<li>Heart Healthy</li>
+<li>Strong Bones</li>
+<li>Rich in Antioxidants</li>
+</ul>
+</div>
+
+</div>
+
+</div>
+
+</body>
+</html>
