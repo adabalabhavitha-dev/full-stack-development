@@ -1,1 +1,1 @@
-This is for java full stack development
+This repository contains my Full Stack Development Lab experiments.
