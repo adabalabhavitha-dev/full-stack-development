@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CSS Color, Background, Font, Text and Box Model</title>
+
+    <style>
+
+        /* Color name */
+        .color-name {
+            color: red;
+        }
+
+        /* HEX value */
+        .hex-color {
+            color: #0000ff;
+        }
+
+        /* RGB value */
+        .rgb-color {
+            color: rgb(0, 128, 0);
+        }
+
+        /* RGBA value */
+        .rgba-color {
+            color: rgba(255, 0, 0, 0.6);
+        }
+
+        /* HSL value */
+        .hsl-color {
+            color: hsl(280, 100%, 50%);
+        }
+
+        /* HSLA value */
+        .hsla-color {
+            color: hsla(30, 100%, 50%, 0.7);
+        }
+
+        .background {
+            background-color: lightblue;
+
+            /* Background image */
+            background-image: url("https://via.placeholder.com/600x150");
+
+            /* Image should not repeat */
+            background-repeat: no-repeat;
+
+            /* Image position */
+            background-position: center;
+
+            /* Image size */
+            background-size: cover;
+
+            /* Height */
+            height: 150px;
+        }
+
+        .font-example {
+            font-family: Arial, sans-serif;
+            font-size: 24px;
+            font-style: italic;
+            font-weight: bold;
+            line-height: 1.5;
+        }
+
+        .text-example {
+            text-align: center;
+            text-decoration: underline;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            word-spacing: 8px;
+            line-height: 2;
+        }
+
+        .box {
+            width: 300px;
+            height: 100px;
+
+            /* Content */
+            background-color: lightyellow;
+
+            /* Padding */
+            padding: 20px;
+
+            /* Border */
+            border: 5px solid blue;
+
+            /* Margin */
+            margin: 30px;
+
+            text-align: center;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <h1>CSS Color Examples</h1>
+
+    <p class="color-name">
+        This text uses a color name: RED
+    </p>
+
+    <p class="hex-color">
+        This text uses HEX color: #0000FF
+    </p>
+
+    <p class="rgb-color">
+        This text uses RGB color: rgb(0, 128, 0)
+    </p>
+
+    <p class="rgba-color">
+        This text uses RGBA color.
+    </p>
+
+    <p class="hsl-color">
+        This text uses HSL color.
+    </p>
+
+    <p class="hsla-color">
+        This text uses HSLA color.
+    </p>
+
+    <h1>CSS Background</h1>
+
+    <div class="background">
+        Background Color and Background Image
+    </div>
+
+
+    <h1>CSS Font</h1>
+
+    <p class="font-example">
+        This paragraph demonstrates font properties.
+    </p>
+
+
+    
+    <h1>CSS Text</h1>
+
+    <p class="text-example">
+        This paragraph demonstrates different text properties.
+    </p>
+
+
+
+
+<h1>CSS Box Model</h1>
+
+    <div class="box">
+        This is the CSS Box Model.
+        <br>
+        Content + Padding + Border + Margin
+    </div>
+
+</body>
+</html>
