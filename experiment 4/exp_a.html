@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CSS Selector Forms</title>
+
+    <style>
+
+        
+        p {
+            color: blue;
+        }
+
+        /* ID Selector */
+        #heading {
+            color: red;
+            text-align: center;
+        }
+
+        /* Class Selector */
+        .highlight {
+            background-color: greenyellow;
+        }
+
+        /* Group Selector */
+        h2, h3 {
+            font-family: Arial;
+        }
+
+        /* Universal Selector */
+        * {
+            margin: 5px;
+        }
+
+
+        
+
+        /* Descendant Selector */
+        .container p {
+            color: green;
+        }
+
+        /* Child Selector */
+        .box > p {
+            background-color: lightblue;
+        }
+
+        /* Adjacent Sibling Selector */
+        h3 + p {
+            color: red;
+        }
+
+        /* General Sibling Selector */
+        h4 ~ p {
+            font-weight: bold;
+        }
+
+
+       
+        /* Hover */
+        button:hover {
+            background-color: green;
+            color: white;
+        }
+
+        /* Focus */
+        input:focus {
+            border: 2px solid blue;
+        }
+
+        /* First Child */
+        li:first-child {
+            color: red;
+        }
+
+        /* Last Child */
+        li:last-child {
+            color: green;
+        }
+
+
+
+        /* First Letter */
+        .description::first-letter {
+            font-size: 30px;
+            color: red;
+        }
+
+        /* First Line */
+        .description::first-line {
+            font-weight: bold;
+        }
+
+        /* Before */
+        h2::before {
+            content: "★ ";
+            color: orange;
+        }
+
+        /* After */
+        h2::after {
+            content: " ★";
+            color: orange;
+        }
+
+
+    
+
+        /* Attribute selector */
+        input[type="text"] {
+            background-color: lightyellow;
+        }
+
+        input[type="password"] {
+            background-color: lightpink;
+        }
+
+        a[href^="https"] {
+            color: purple;
+        }
+
+    </style>
+</head>
+
+
+<body>
+
+
+    <h1 id="heading">CSS Selector Forms</h1>
+
+    <h2>Simple Selectors</h2>
+
+    <p>This paragraph uses an Element Selector.</p>
+
+    <p class="highlight">
+        This paragraph uses a Class Selector.
+    </p>
+
+    <h3>Group Selector Example</h3>
+
+
+    
+
+    <h2>Combinator Selectors</h2>
+
+    <!-- Descendant Selector -->
+    <div class="container">
+        <p>This is a descendant paragraph.</p>
+
+        <div>
+            <p>This is also a descendant paragraph.</p>
+        </div>
+    </div>
+
+    <br>
+
+    <!-- Child Selector -->
+    <div class="box">
+        <p>This is a direct child.</p>
+
+        <div>
+            <p>This is a nested paragraph.</p>
+        </div>
+    </div>
+
+    <br>
+
+    <!-- Adjacent Sibling -->
+    <h3>Adjacent Sibling</h3>
+    <p>This paragraph is immediately after h3.</p>
+    <p>This paragraph is not immediately after h3.</p>
+
+    <!-- General Sibling -->
+    <h4>General Sibling</h4>
+    <p>This is a general sibling.</p>
+    <p>This is another general sibling.</p>
+
+
+    
+
+    <h2>Pseudo-Class Selectors</h2>
+
+    <button>Move Mouse Over Me</button>
+
+    <br><br>
+
+    <input type="text" placeholder="Click and type here">
+
+    <ul>
+        <li>First Item</li>
+        <li>Second Item</li>
+        <li>Last Item</li>
+    </ul>
+
+
+   
+
+    <h2>Pseudo-Element Selectors</h2>
+
+    <p class="description">
+        This paragraph demonstrates pseudo-element selectors.
+        The first letter and first line are styled differently.
+    </p>
+
+
+    
+    <h2>Attribute Selectors</h2>
+
+    <input type="text" placeholder="Enter Username">
+
+    <br><br>
+
+    <input type="password" placeholder="Enter Password">
+
+    <br><br>
+
+    <a href="https://google.com">Visit Google</a>
+
+</body>
+</html>
