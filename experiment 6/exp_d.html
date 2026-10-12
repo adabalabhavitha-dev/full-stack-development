@@ -1,0 +1,40 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Voter Eligibility</title>
+</head>
+<body>
+    <h2>Voter Eligibility Checker</h2>
+
+    <table border="1" cellpadding="10">
+        <tr>
+            <th>Name</th>
+            <th>Age</th>
+            <th>Eligibility</th>
+        </tr>
+        <tr>
+            <td id="name"></td>
+            <td id="age"></td>
+            <td id="result"></td>
+        </tr>
+    </table>
+
+    <script>
+        let name = prompt("Enter your name:");
+        let age = Number(prompt("Enter your age:"));
+
+        let result;
+
+        if (age >= 18) {
+            result = "Eligible to Vote";
+        } else {
+            result = "Not Eligible to Vote";
+        }
+
+        document.getElementById("name").textContent = name;
+        document.getElementById("age").textContent = age;
+        document.getElementById("result").textContent = result;
+    </script>
+</body>
+</html>
